@@ -1,0 +1,25 @@
+# https://codepitbull.medium.com/cross-compilation-for-rust-and-how-to-reduce-binary-sizes-by-88-269deea50c1b
+
+# https://github.com/cross-rs/cross
+# https://kerkour.com/rust-cross-compilation
+
+# https://stackoverflow.com/questions/31492799/cross-compile-a-rust-application-from-linux-to-windows
+# https://wiki.archlinux.org/title/Rust#Cross_compiling
+
+[package]
+name = "hellocross"
+version = "0.1.0"
+authors = ["marcus"]
+edition = "2018"
+
+
+
+
+[target.x86_64-pc-windows-gnu]
+linker = "/usr/bin/x86_64-w64-mingw32-gcc"
+ar = "/usr/bin/x86_64-w64-mingw32-ar"
+
+[dependencies]
+
+
+# https://rust-lang.github.io/rustup/cross-compilation.html
