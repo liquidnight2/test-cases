@@ -3,6 +3,7 @@
 
 ### Cross-Compile zu windows
 > apt-get install	binutils-mingw-w64-x86-64
+>
 > apt-get install	g++-mingw-w64-x86_64
 
 
