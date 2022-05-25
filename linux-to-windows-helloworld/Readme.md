@@ -8,9 +8,11 @@
 
 
 ###  Cargo.toml ergaenzen:
-> [target.x86_64-pc-windows-gnu]
-> linker = "/usr/bin/x86_64-w64-mingw32-gcc"
-> ar = "/usr/bin/x86_64-w64-mingw32-ar"
+```
+[target.x86_64-pc-windows-gnu]
+linker = "/usr/bin/x86_64-w64-mingw32-gcc"
+ar = "/usr/bin/x86_64-w64-mingw32-ar"
+```
 
 > rustup target add x86_64-pc-windows-gnu
 
