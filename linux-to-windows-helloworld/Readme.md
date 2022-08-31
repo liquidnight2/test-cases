@@ -8,7 +8,7 @@
 
 
 
-###  Cargo.toml ergaenzen:
+### Add to Cargo.toml:
 ```
 [target.x86_64-pc-windows-gnu]
 linker = "/usr/bin/x86_64-w64-mingw32-gcc"
