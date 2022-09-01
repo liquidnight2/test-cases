@@ -1,0 +1,24 @@
+# 2022   warning: `"pkg-config" "--libs" "--cflags" "graphene-gobject-1.0" "graphene-gobject-1.0 >= 1.10"` did not exit successfully: exit status: 1
+#  apt-get install  libgraphene-1.0-dev
+#  apt-get install  librust-gdk4-sys-dev
+[package]
+name = "gtk4-hello"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[dependencies.gtk]
+package = "gtk4"
+version = "0.4.8"
+features = ["v4_2"]
+
+[profile.release]
+opt-level = 's'     # Optimize for size.
+lto = true          # Enable Link Time Optimization
+strip = true        # Strip symbols from binary*
+
+[package.metadata.deb]
+maintainer = "liquidnight2 <liquidnight@gmx.net>"
+copyright = "none"
+name = "hello-gtk4"
