@@ -9,6 +9,6 @@ edition = "2021"
 # a_old = ["t_old"]
 
 [dependencies]
-analyser = { path = "../analyser", features = ["a_new"] }
+analyser = { path = "../analyser", features = ["a_old"] }
 #dep = { path = "../dep_new", optional = true }
 #dep = { path = "../dep_old", optional = true }
