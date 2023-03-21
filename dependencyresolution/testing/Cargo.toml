@@ -3,12 +3,12 @@ name = "testing"
 version = "0.1.0"
 edition = "2021"
 
-[features]
-new = ["dep_new"]
-old = ["dep_old"]
-default-features = ["dep_new"]
+
+# [features]
+# a_new = ["t_new"]
+# a_old = ["t_old"]
 
 [dependencies]
-analyser = { path = "../analyser" }
-dep_new = { path = "../dep_new", optional = true }
-dep_old = { path = "../dep_old", optional = true }
+analyser = { path = "../analyser", features = ["a_new"] }
+#dep = { path = "../dep_new", optional = true }
+#dep = { path = "../dep_old", optional = true }

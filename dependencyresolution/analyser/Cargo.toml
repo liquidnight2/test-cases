@@ -3,6 +3,11 @@ name = "analyser"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+a_new = ["dep_new"]
+a_old = ["dep_old"]
+
 
 [dependencies]
-# image = "*"
+dep_new = { version = "*", optional = true, path = "../dep_new" }
+dep_old = { version = "*", optional = true, path = "../dep_old" }
