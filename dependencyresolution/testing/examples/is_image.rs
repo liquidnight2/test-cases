@@ -1,3 +1,9 @@
+
+use analyser::analyse_image;
+
+
 fn main() {
-    println!("is_image!!");
+
+    let r  = analyse_image("");
+    println!("is_image: {}",r);
 }
