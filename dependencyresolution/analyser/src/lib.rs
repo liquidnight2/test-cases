@@ -1,3 +1,10 @@
+
+fn analyse_image(name: &str) -> bool {
+    println!("dummy!");
+    true
+}
+
+
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
